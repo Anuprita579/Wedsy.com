@@ -7,10 +7,10 @@ import HdrWeakIcon from '@mui/icons-material/HdrWeak';
 function Header() {
   return (
     <>
-        <div className='bg-purple-900 flex justify-between items-center py-3'>
+        <div className='bg-purple-900 flex justify-between items-center py-3 sticky top-0'>
             <div className='text-amber-300 flex'>
                 <HdrWeakIcon className='mx-5 mt-2'></HdrWeakIcon>
-                <h1 className='text-amber-300 mx-5 text-3xl font-bold'>Company</h1>
+                <h1 className='text-amber-300 mx-5 text-3xl font-bold'>Wedsy.com</h1>
             </div>
 
             <div className='text-white float-right space-x-4 mr-5' >
