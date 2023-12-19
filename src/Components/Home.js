@@ -2,6 +2,7 @@ import React from 'react'
 import WeddingCarousel from './WeddingCarousel'
 import Testimonials from './Testimonials';
 import { testimonials } from './Testimonials';
+import SearchBar from './SearchBar';
 
 function Home() {
   return (
@@ -28,6 +29,7 @@ function Home() {
         
 
       </div>
+      <SearchBar />
       
 
 
