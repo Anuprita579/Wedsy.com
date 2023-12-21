@@ -28,7 +28,7 @@ export const testimonials = [
 function Testimonials({person_img_url, name, person_designation, person_testimonials}) {
   return (
     <>
-        <img src={person_img_url} alt="personimg" className='h-20 w-20 rounded-full relative left-16 z-10 border-purple-700 border-2' />
+        <img src={person_img_url} alt="personimg" className='h-20 w-20 rounded-full relative left-16 bottom-3 z-10 border-purple-100 border-2' />
         <div className='m-3 w-1/5 p-4 bg-purple-100 rounded-xl'>
             <div className='flex align-middle'>
                 <div className='bg-purple-200 h-20 w-20 relative -top-4 -left-4 rounded-br-full'>  </div>

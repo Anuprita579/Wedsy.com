@@ -17,7 +17,7 @@ function Home() {
         <h2 className='font-sans font-semibold text-3xl pl-3 text-purple-950'>Find out Popular</h2>
         <br></br>
 
-        <h2 className='font-sans font-semibold text-3xl pl-3 text-purple-950 mb-6'>Testimonials</h2>
+        <h2 className='font-sans font-semibold text-3xl pl-3 text-purple-950 mb-10'>Testimonials</h2>
         <div className='flex align-middle justify-center'>
           {
             testimonials.map((test) => {
