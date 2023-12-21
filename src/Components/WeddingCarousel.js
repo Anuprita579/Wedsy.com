@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const images = [
     {
@@ -28,6 +28,14 @@ function WeddingCarousel() {
     const nextSlide = () => {
         setCurrentImage((nextImage) => (nextImage +1)%images.length);
     }
+    useEffect(()=>{
+        const timer = setInterval(()=>{
+            nextSlide();
+        }, 5000);
+        return ()=>{
+            clearInterval(timer);
+        }
+    }, [currentImage]);
   return (
     <>
     <div className='flex items-center justify-center bg-purple-100'>
