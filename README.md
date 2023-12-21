@@ -1,2 +1,2 @@
 # Wedsy.com
-WEDSY.com - Where weddings simplify
+WEDSY.com - Where weddings simplify !
