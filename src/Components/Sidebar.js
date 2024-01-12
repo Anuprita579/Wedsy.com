@@ -21,7 +21,7 @@ function Sidebar() {
 
         <div className='flex text-2xl  mx-5 my-3 text-white'>
             <CardGiftcardIcon className='mx-4'></CardGiftcardIcon>
-            <h3>Card</h3>
+            <Link to="/card"> <h3>Card</h3></Link>
         </div>
 
         <div className='flex text-2xl mx-5 my-3 text-white'>

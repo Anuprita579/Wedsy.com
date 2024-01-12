@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter ,RouterProvider } from 'react-router-dom';
 import Home from "./Components/Home"
 import SearchBar from "./Components/SearchBar"
+import Invitation from './Components/Invitation';
 
 const appRouter = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/search",
         element: <SearchBar />
+      },
+      {
+        path: "/card",
+        element: <Invitation />
       }
     ]
   }
