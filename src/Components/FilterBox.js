@@ -73,7 +73,7 @@ function FilterBox() {
             <div className='grid grid-cols-2 gap-2'>
                 {theme.map((themevar)=>{
                     return(
-                        <div className='flex'>
+                        <div className='flex' key={themevar.theme_id}>
                             <input type='checkbox'/> 
                             <p className='px-2'>{themevar.theme_name}</p>
                         </div>
