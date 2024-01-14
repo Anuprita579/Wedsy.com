@@ -7,11 +7,13 @@ import { createBrowserRouter ,RouterProvider } from 'react-router-dom';
 import Home from "./Components/Home"
 import SearchBar from "./Components/SearchBar"
 import Invitation from './Components/Invitation';
+import Error from './Components/Error';
 
 const appRouter = createBrowserRouter([
   {
     path:"/",
     element:<App />,
+    errorElement: <Error />,
     children: [
       {
         path: "/",
