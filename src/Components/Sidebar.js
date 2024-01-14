@@ -26,7 +26,7 @@ function Sidebar() {
 
         <div className='flex text-2xl mx-5 my-3 text-white'>
             <ForumIcon className='mx-4'></ForumIcon>
-            <h3>Community</h3>
+            <Link to="/community"><h3>Community</h3></Link>
         </div>
       
     </div>

@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const searchCard = [
     {
@@ -41,7 +42,7 @@ function SearchCard() {
                 return(
                     <div key={card.card_id} className='bg-purple-300 m-3 p-3 text-center rounded-xl justify-center align-middle items-center'> 
                         <h1 className='text-xl font-bold'>{card.title}</h1>
-                        <img src={card.img_url} alt={card.title} className='h-20'/>
+                        <Link to={`/searchFor/${card.title.toLowerCase().replaceAll(' ', '-')}`}><img src={card.img_url} alt={card.title} className='h-20'/></Link>
                     </div>
                 );
                 

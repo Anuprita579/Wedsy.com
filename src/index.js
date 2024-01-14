@@ -8,6 +8,13 @@ import Home from "./Components/Home"
 import SearchBar from "./Components/SearchBar"
 import Invitation from './Components/Invitation';
 import Error from './Components/Error';
+import Community from './Components/Community';
+import Photographer from './Components/Photographer';
+import Florist from './Components/Florist';
+import Caterers from './Components/Caterers';
+import MakeupArtist from './Components/MakeupArtist';
+import BridalShop from './Components/BridalShop';
+import Dj from './Components/Dj';
 
 const appRouter = createBrowserRouter([
   {
@@ -26,7 +33,36 @@ const appRouter = createBrowserRouter([
       {
         path: "/card",
         element: <Invitation />
-      }
+      },
+      {
+        path: "/community",
+        element: <Community />
+      },
+      {
+        path: "/searchFor/photographer",
+        element: <Photographer />
+      },
+      {
+        path: "/searchFor/florist",
+        element: <Florist />
+      },
+      {
+        path: "/searchFor/caterers",
+        element: <Caterers />
+      },
+      {
+        path: "/searchFor/bridal-shop",
+        element: <BridalShop />
+      },
+      {
+        path: "/searchFor/makeup-artist",
+        element: <MakeupArtist />
+      },
+      {
+        path: "/searchFor/dj",
+        element: <Dj />
+      },
+
     ]
   }
 ]);
