@@ -40,10 +40,10 @@ function SearchCard() {
         <div className='bg-purple-100 m-4 p-4 flex justify-center align-middle rounded-xl'>
             {searchCard.map((card)=>{
                 return(
-                    <div key={card.card_id} className='bg-purple-300 m-3 p-3 text-center rounded-xl justify-center align-middle items-center'> 
+                    <Link to={`/searchFor/${card.title.toLowerCase().replaceAll(' ', '-')}`}><div key={card.card_id} className='bg-purple-300 m-3 p-3 text-center rounded-xl justify-center align-middle items-center'> 
                         <h1 className='text-xl font-bold'>{card.title}</h1>
-                        <Link to={`/searchFor/${card.title.toLowerCase().replaceAll(' ', '-')}`}><img src={card.img_url} alt={card.title} className='h-20'/></Link>
-                    </div>
+                        <img src={card.img_url} alt={card.title} className='h-20'/>
+                    </div></Link>
                 );
                 
             })}

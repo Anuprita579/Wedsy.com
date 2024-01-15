@@ -6,7 +6,7 @@ import FilterBox from './FilterBox';
 
 const wedDest = [
   {id: "001",destination: "Agra"},
-  {id: "002",destination: "Ahemdabad"},
+  {id: "002",destination: "Ahmedabad"},
   {id: "003",destination: "Alibagh"},
   {id: "004",destination: "Allahabad"},
   {id: "005",destination: "Amritsar"},

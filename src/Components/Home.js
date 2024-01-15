@@ -1,6 +1,7 @@
 import React from 'react'
 import WeddingCarousel from './WeddingCarousel'
 import Testimonials from './Testimonials';
+import Map from './Map';
 import { testimonials } from './Testimonials';
 
 function Home() {
@@ -14,10 +15,11 @@ function Home() {
         <br></br> 
 
         <h2 className='font-sans font-semibold text-3xl pl-3 text-purple-950'>Find out Popular</h2>
+        <Map />
         <br></br>
 
         <h2 className='font-sans font-semibold text-3xl pl-3 text-purple-950 mb-10'>Testimonials</h2>
-        <div className='flex align-middle justify-center'>
+        <div className='flex align-middle justify-center pb-10'>
           {
             testimonials.map((test) => {
               return <Testimonials {...test} key={test.id}/>
