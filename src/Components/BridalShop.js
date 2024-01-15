@@ -2,6 +2,15 @@ import React from 'react';
 import StarIcon from '@mui/icons-material/Star';
 import StorefrontIcon from '@mui/icons-material/Storefront';
 
+function BridalBanner(){
+    return(
+        <div className='bg-gradient-to-r from-black via-pink-500  to-black flex flex-col justify-center align-middle items-center p-6 py-10'>
+            <h1 className='text-5xl font-semibold text-white p-2'>Find a Bridal Shop! </h1>
+            <p className='text-yellow-400'>Connecting hearts through wedding memories ❣️</p>
+        </div>
+    )
+}
+
 const bridal = [
     {
         id:"001",
@@ -54,6 +63,7 @@ function BridalShop() {
   return (
     <>
         <div className='bg-purple-100 w-full h-full'> 
+        <BridalBanner />
             <div className='flex flex-wrap'>
                 {bridal.map((bride)=>{
                     return(
