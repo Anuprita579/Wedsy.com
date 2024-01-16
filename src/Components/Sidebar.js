@@ -9,25 +9,33 @@ import { Link } from 'react-router-dom';
 function Sidebar() {
   return (
     <div className='flex flex-col bg-purple-950 w-1/5 h-full'>
-        <div className='flex text-2xl  mx-5 my-3 text-white'>
+        <Link to="/">
+        <div className='flex text-2xl  mx-5 my-3 text-white max-sm:justify-center'>
             <HomeIcon className='mx-4'></HomeIcon>
-            <Link to="/"><h3>Home</h3></Link>
+            <h3 className='max-sm:hidden'>Home</h3>
         </div>
+        </Link>
 
-        <div className='flex text-2xl mx-5 my-3 text-white'>
+        <Link to="/search">
+        <div className='flex text-2xl mx-5 my-3 text-white max-sm:justify-center'>
             <SearchIcon className='mx-4'></SearchIcon>
-            <Link to="/search"><h3>Search</h3></Link>
+            <h3 className='max-sm:hidden'>Search</h3>
         </div>
+        </Link>
 
-        <div className='flex text-2xl  mx-5 my-3 text-white'>
+        <Link to="/card"> 
+        <div className='flex text-2xl  mx-5 my-3 text-white max-sm:justify-center'>
             <CardGiftcardIcon className='mx-4'></CardGiftcardIcon>
-            <Link to="/card"> <h3>Card</h3></Link>
+            <h3 className='max-sm:hidden'>Card</h3>
         </div>
+        </Link>
 
-        <div className='flex text-2xl mx-5 my-3 text-white'>
+        <Link to="/community">
+        <div className='flex text-2xl mx-5 my-3 text-white max-sm:justify-center'>
             <ForumIcon className='mx-4'></ForumIcon>
-            <Link to="/community"><h3>Community</h3></Link>
+            <h3 className='max-sm:hidden'>Community</h3>
         </div>
+        </Link>
       
     </div>
   )

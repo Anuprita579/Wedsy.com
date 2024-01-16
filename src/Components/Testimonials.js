@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const testimonials = [
+const testimonials = [
     {
         id: "person01",
         name: "John Doe",
@@ -25,21 +25,32 @@ export const testimonials = [
 ];
 
 
-function Testimonials({person_img_url, name, person_designation, person_testimonials}) {
+function Testimonials() {
   return (
     <>
-        <img src={person_img_url} alt="personimg" className='h-20 w-20 rounded-full relative left-16 bottom-3 z-10 border-purple-100 border-2' />
-        <div className='m-3 w-1/5 p-4 bg-purple-100 rounded-xl'>
-            <div className='flex align-middle'>
-                <div className='bg-purple-200 h-20 w-20 relative -top-4 -left-4 rounded-br-full'>  </div>
-                <div className='mt-4'>
-                    <h2 className='font-sans font-bold text-purple-950'>{name}</h2>
-                    <h3 className='text-stone-400 italic font-serif'> {person_designation}</h3>
-                </div>
+        <div className='flex justify-center items-center px-4 max-lg:flex-col'>
+            {testimonials.map((test)=>{
+                return(
+                    <div>
+                        <img src={test.person_img_url} alt="personimg" className='h-20 w-20 rounded-full relative top-16 z-10 border-purple-100 border-2' />
+                        <div className='m-3 w-11/12 p-4 bg-purple-100 rounded-xl'>
+                            <div className='flex align-middle'>
+                                <div className='bg-purple-200 h-20 w-20 relative -top-4 -left-4 rounded-br-full'>  </div>
+                                <div className='mt-4'>
+                                    <h2 className='font-sans font-bold text-purple-950'>{test.name}</h2>
+                                    <h3 className='text-stone-400 italic font-serif'> {test.person_designation}</h3>
+                                </div>
 
-            </div>
-            <p className='text-stone-600 my-2 italic'>&ldquo; {person_testimonials} &rdquo; </p>
-        </div> 
+                            </div>
+                            <p className='text-stone-600 my-2 italic'>&ldquo; {test.person_testimonials} &rdquo; </p>
+                        </div> 
+
+                    </div>
+                )
+            })}
+        </div>
+        
+        
     </>
   )
 }

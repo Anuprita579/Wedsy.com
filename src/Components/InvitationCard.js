@@ -20,7 +20,7 @@ function InvitationCard() {
             {invitationCard.map((inviteCard)=>{
                 return(
                     <div key={inviteCard.invitation_id} className='bg-purple-300 m-4 p-4 text-center flex flex-col align-middle justify-center rounded-xl'>
-                        <h1 className='text-xl font-bold'>{inviteCard.title}</h1>
+                        <h1 className='text-sm font-bold'>{inviteCard.title}</h1>
                         <img src={inviteCard.img_url} alt={inviteCard.title} className='h-20'/>
                     </div>
                     

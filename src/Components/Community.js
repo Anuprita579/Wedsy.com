@@ -1,7 +1,6 @@
 import React from 'react';
 import CommunityBanner from './CommunityBanner';
 import Testimonials from './Testimonials';
-import { testimonials } from './Testimonials';
 
 const gallery = [
     {
@@ -173,13 +172,7 @@ function Community() {
     <div className='bg-purple-200 w-full h-full'>
         <CommunityBanner />
 
-        <div className='flex align-middle justify-center'>
-          {
-            testimonials.map((test) => {
-              return <Testimonials {...test} key={test.id}/>
-            })
-          }
-        </div>
+        <Testimonials />
         <h2 className='font-sans font-bold text-3xl pl-3 mt-4 text-purple-800 bg-gradient-to-b from-purple-200 to-purple-300 p-5 underline underline-offset-8 text-center'>Gallery &mdash; <span className='italic font-semibold text-blue-700 text-2xl'>Wedding Moment Wall</span></h2>
         <div className='flex flex-wrap justify-center align-middle'>
             {gallery.map((gal)=>{

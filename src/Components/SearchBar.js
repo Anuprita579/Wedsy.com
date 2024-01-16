@@ -143,12 +143,15 @@ function SearchBar() {
             <div>
               {filterBox? <FilterBox /> : null}
             </div>
-          </div>
-            
+
             <div>
               <SearchCard />
             </div>
             
+          </div>
+  
+            
+                      
         </div> 
 
         
