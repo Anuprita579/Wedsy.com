@@ -39,12 +39,12 @@ function WeddingCarousel() {
   return (
     <>
     <div className='flex items-center justify-center bg-purple-100'>
-        <button onClick={prevSlide} className='bg-purple-300 h-80 p-5'> &lt; </button>
+        <button onClick={prevSlide} className='bg-purple-300 h-80 p-5 max-md:p-1 max-md:h-40 max-lg:p-3'> &lt; </button>
         
-        <img src={images[currentImage].img_url} alt="weddingimage" className='w-4/5 m-5 rounded-br-full'></img>
-        <button onClick={nextSlide} className='bg-purple-300 h-80 p-5'> &gt; </button>
+        <img src={images[currentImage].img_url} alt="weddingimage" className='w-4/5 m-5 rounded-br-full max-md:w-3/5'></img>
+        <button onClick={nextSlide} className='bg-purple-300 h-80 p-5 max-md:p-1 max-md:h-40 max-lg:p-3'> &gt; </button>
     </div>
-    <div className='relative bottom-40 left-40 font-bold font-sans text-3xl w-2/5 p-2 text-white bg-purple-400'>{images[currentImage].img_text}</div>
+    <div className='relative bottom-40 left-40 font-bold font-sans text-3xl w-2/5 p-2 text-white bg-purple-400 max-md:hidden max-lg:text-xs'>{images[currentImage].img_text}</div>
 
     </>
   )

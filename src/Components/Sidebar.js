@@ -12,28 +12,28 @@ function Sidebar() {
         <Link to="/">
         <div className='flex text-2xl  mx-5 my-3 text-white max-sm:justify-center'>
             <HomeIcon className='mx-4'></HomeIcon>
-            <h3 className='max-sm:hidden'>Home</h3>
+            <h3 className='max-sm:hidden max-lg:hidden'>Home</h3>
         </div>
         </Link>
 
         <Link to="/search">
         <div className='flex text-2xl mx-5 my-3 text-white max-sm:justify-center'>
             <SearchIcon className='mx-4'></SearchIcon>
-            <h3 className='max-sm:hidden'>Search</h3>
+            <h3 className='max-sm:hidden max-lg:hidden'>Search</h3>
         </div>
         </Link>
 
         <Link to="/card"> 
         <div className='flex text-2xl  mx-5 my-3 text-white max-sm:justify-center'>
             <CardGiftcardIcon className='mx-4'></CardGiftcardIcon>
-            <h3 className='max-sm:hidden'>Card</h3>
+            <h3 className='max-sm:hidden max-lg:hidden'>Card</h3>
         </div>
         </Link>
 
         <Link to="/community">
         <div className='flex text-2xl mx-5 my-3 text-white max-sm:justify-center'>
             <ForumIcon className='mx-4'></ForumIcon>
-            <h3 className='max-sm:hidden'>Community</h3>
+            <h3 className='max-sm:hidden max-lg:hidden'>Community</h3>
         </div>
         </Link>
       
