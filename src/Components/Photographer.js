@@ -53,7 +53,7 @@ const photographer = [
 function PhotographerBanner(){
     return(
         <div className='bg-gradient-to-r from-black via-pink-500  to-black flex flex-col justify-center align-middle items-center p-6 py-10'>
-            <h1 className='text-5xl font-semibold text-white p-2'>Find a photographer! </h1>
+            <h1 className='text-5xl font-semibold text-white p-2 max-md:text-3xl'>Find a photographer! </h1>
             <p className='text-yellow-400'>Connecting hearts through wedding memories ❣️</p>
         </div>
     )
