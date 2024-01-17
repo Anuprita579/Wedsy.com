@@ -76,7 +76,7 @@ function MakeupArtist() {
                                 {art.available==="yes"? <div className='h-3 w-3 bg-green-500 rounded-full'></div>:<div className='h-3 w-3 bg-red-500 rounded-full'></div>}
                             </div>
                             <h2 className=' text-purple-950 text-xl font-semibold'>  ₹ {art.price} <span className='text-sm'>/hr</span> </h2>
-                            <button className='bg-purple-900 text-white p-2 px-4 m-2'>View Profile</button>
+                            <button className='bg-purple-900 text-white p-2 px-4 m-2 hover:bg-purple-950'>View Profile</button>
                         </div>
                     )
                 })}    

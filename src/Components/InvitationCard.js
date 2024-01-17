@@ -19,7 +19,7 @@ function InvitationCard() {
         <div className='flex w-full justify-center align-middle items-center'>
             {invitationCard.map((inviteCard)=>{
                 return(
-                    <div key={inviteCard.invitation_id} className='bg-purple-300 m-4 p-4 text-center flex flex-col align-middle justify-center rounded-xl'>
+                    <div key={inviteCard.invitation_id} className='bg-purple-300 m-4 p-4 text-center flex flex-col align-middle justify-center rounded-xl transition ease-in-out delay-100 hover:translate-y-1 hover:scale-110 duration-150'>
                         <h1 className='text-sm font-bold'>{inviteCard.title}</h1>
                         <img src={inviteCard.img_url} alt={inviteCard.title} className='h-20'/>
                     </div>

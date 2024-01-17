@@ -67,7 +67,7 @@ function BridalShop() {
             <div className='flex flex-wrap'>
                 {bridal.map((bride)=>{
                     return(
-                        <div className='bg-purple-200 m-4 p-10 rounded-xl flex flex-col justify-center align-middle '>
+                        <div className='bg-purple-200 m-4 p-10 rounded-xl flex flex-col justify-center align-middle'>
                             <img src={bride.profile_img} alt='profile' className='h-40 w-40 rounded-full border-2 border-purple-900'/>
                             <h2 className='text-xl text-center p-4 font-semibold'>{bride.name}</h2>
                             <div className='flex justify-between align-middle text-center items-center'> 
@@ -76,7 +76,7 @@ function BridalShop() {
                                 {bride.available==="yes"? <div className='h-3 w-3 bg-green-500 rounded-full'></div>:<div className='h-3 w-3 bg-red-500 rounded-full'></div>}
                             </div>
                             <h2 className=' text-purple-950 text-xl font-semibold'>  ₹ {bride.price} <span className='text-sm'>~approx</span> </h2>
-                            <button className='bg-purple-900 text-white p-2 px-4 m-2'>View Menu</button>
+                            <button className='bg-purple-900 text-white p-2 px-4 m-2 hover:bg-purple-950'>View Menu</button>
                         </div>
                     )
                 })}    
