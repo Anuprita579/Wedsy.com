@@ -31,9 +31,9 @@ function Testimonials() {
         <div className='flex justify-center items-center px-4 max-lg:flex-col'>
             {testimonials.map((test)=>{
                 return(
-                    <div>
+                    <div key={test.id}>
                         <img src={test.person_img_url} alt="personimg" className='h-20 w-20 rounded-full relative top-16 z-10 border-purple-100 border-2' />
-                        <div className='m-3 w-11/12 p-4 bg-purple-100 rounded-xl'>
+                        <div className='m-3 w-11/12 p-4 bg-purple-100 rounded-xl' >
                             <div className='flex align-middle'>
                                 <div className='bg-purple-200 h-20 w-20 relative -top-4 -left-4 rounded-br-full'>  </div>
                                 <div className='mt-4'>

@@ -2,6 +2,7 @@ import React from 'react'
 import WeddingCarousel from './WeddingCarousel'
 import Testimonials from './Testimonials';
 import Map from './Map';
+import OtpLogin from './Login/OtpLogin';
 
 function Home() {
   return (
@@ -23,6 +24,8 @@ function Home() {
         
 
       </div>
+
+      <OtpLogin />
       
 
 
